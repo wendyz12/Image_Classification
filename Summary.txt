@@ -1,0 +1,42 @@
+﻿Project Title 
+Dog Breed Recognition
+
+
+Project Category
+Machine Learning - Image Classification
+
+
+Project Description
+Set up a local system (including frontend/backend) to recognize the breed of the dog (from the possible 133 dog breeds) in the image uploaded by users.
+Developed our model using transfer learning on a pre-trained classifier model VGG16. We used Deep Learning for Java (deeplearning4j- DL4J) libraries to train our model. 
+The frontend was developed using Java Swing Library wherein user can choose dog image of his choice and then the model predicts the dog's breed, 
+and its image is displayed along with a short description from Wikipedia and the probability values of the top five candidate breeds for prediction. 
+
+
+Team Members and their responsibilities
+Qi(Wendy) Zhao:
+1. Constructed the system backend with a pre-trained model by building the classes of Classifier, Trainer, ImgSetIterator and ModelUtils
+2. Resolved the issue of huge model size by extracting and saving the last layer of Vgg16
+3. Created test cases for Classifier and ModelUtils class
+4. Optimized and validated methods across classes and organized GitHub repo
+
+
+
+
+Yingnan(Elva) Zhu:
+1. Designed and built sketch of user interface class 
+2. Constructed the program by connecting backend(the model) and frontend classes
+3. Built a web scraper to fetch dog information and image from Wikipedia based on prediction result
+4. Created test cases for web scraper class
+5. Build ImageHandler class
+ 
+
+
+Nidhi Gupta:
+1. Worked on the Classifier class on the backend and integrated the most probable breeds  to the front end (UserInterface) class.
+Most probable breeds are based on probability calculations in the Classifier class. 
+Completed the classifier class’s two test cases.
+2. ImageHandler Class and completed its test cases.
+3. Trainer Class with one test case.
+4. ImgDataSetIterator Class with 3 test cases
+5. Used Robot java library to create a test case for Swing UserInterface.

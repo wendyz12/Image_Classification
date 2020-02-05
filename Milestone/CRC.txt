@@ -1,0 +1,54 @@
+﻿ImageHandler
+	
+
+	Responsibilities:
+* Read an image
+* Resize an image
+* Write an image
+
+
+	Collaborators:
+* swingUI
+	
+
+
+
+
+
+ModelLoader
+	
+
+	Responsibilities:
+* Import keras model for prediction
+
+	Collaborators:
+* NULL
+	
+
+
+
+
+
+Prediction
+	
+
+	Responsibilities:
+* Predict a new image
+
+	Collaborators:
+* ImageHandler
+* ModelLoader
+
+	
+
+
+
+swingUI
+	
+
+	Responsibilities:
+* Choose an image
+* Kick of prediction
+* Display model result
+	Collaborators:
+* Prediction
